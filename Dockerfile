@@ -37,8 +37,17 @@ COPY ./fastcgi-php.conf /etc/nginx/snippets/fastcgi-php.conf
 # Copiar el código fuente de la aplicación
 COPY . .
 
+# Copy the composer.json and composer.lock files
+COPY composer.json composer.lock ./
+
 # Instalar dependencias de Composer
 RUN composer install --no-dev --optimize-autoloader --no-interaction --no-plugins
+
+# Copy entrypoint script
+COPY ./docker-entrypoint.sh /var/www/html/docker-entrypoint.sh
+
+# Make entrypoint script executable
+RUN chmod +x /var/www/html/docker-entrypoint.sh
 
 # Instalar la biblioteca de Elasticsearch
 RUN composer require elasticsearch/elasticsearch
