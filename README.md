@@ -42,9 +42,7 @@ To test Elasticsearch, follow these steps:
 2. Register a document by filling in the ID, title, and content fields.
 3. Click the "Index Document" button to index the document.
 
-<video width="600" controls>
-  <source src="assets/ElasticSearch.webm" type="video/webm">
-</video>
+[ElasticSearch.webm](https://github.com/user-attachments/assets/5f628bf3-6285-41d6-817a-920ce78b61af)
 
 ## Access MailHog
 
@@ -57,9 +55,7 @@ To see the email captured by MailHog, navigate to the following URL in your brow
 
 http://localhost:8025/
 
-<video width="600" controls>
-  <source src="assets/Mailhog.webm" type="video/webm">
-</video>
+[Mailhog.webm](https://github.com/user-attachments/assets/c5aa03d6-1aad-4364-b3b5-0dc12d064a18) 
 
 ## AWS S3 Integration
 This application includes a simple interface for uploading, viewing, and deleting files on AWS S3.
@@ -80,9 +76,7 @@ http://localhost:8080/s3/list
 ### Deleting Files
 To delete a file from AWS S3, use the delete button next to the file in the list view.
 
-<video width="600" controls>
-  <source src="assets/AWS3.webm" type="video/webm">
-</video>
+[AWS3.webm](https://github.com/user-attachments/assets/7f1d8d58-5160-47c4-8bab-1d8f96c49570)
 
 
 
